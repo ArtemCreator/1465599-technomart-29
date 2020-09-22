@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Артём Бондаренко](https://up.htmlacademy.ru/htmlcss/29/user/1465599).
-* Наставник:  [Николай Чередник] (https://htmlacademy.ru/profile/id867417).
+* Наставник:  [Николай Чередник](https://htmlacademy.ru/profile/id867417).
 
 ---
 
