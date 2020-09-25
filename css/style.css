@@ -1,0 +1,144 @@
+
+/* Variables*/
+
+:root {
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-grey: #3D546F;
+  --basic-greylight: #C5C5C5;
+  --basic-background: #F1F5F7;
+  --basic-white: #FFFFFF;
+  --basic-beigelight: #F9F5F0;
+  --basic-blacklight: #32425C;
+  --basic-blackdark: #293449;
+  --black: #000000;
+
+  --special-yellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-liliac: #DC91D8;
+  --special-greenlight: #8ED78F;
+  --special-yellowlight: #FFC047;
+
+  --success: #5FBB2D;
+  --error: #BA2732;
+}
+
+/* Global */
+
+body {
+ min-width: 1200px;
+ margin: 0;
+ padding: 0;
+ font-family: "PT Sans", "Arial", sans-serif;
+ font-size: 14px;
+ line-height: 24px;
+ font-weight: 400;
+ color: #000000;
+ background-color: #F1F5F7;
+ background-position: top center;
+ background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-header {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 1200px;
+  height: 320px;
+
+  background-color: rgba(0, 0, 0, 0.0001);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.main-header-usermenu {
+  padding-left: 130px;
+  padding-left: 130px;
+  background-color: var(--basic-blackdark);
+  height: 42px;
+}
+
+.main-header-logo {
+  width: 220px;
+  height: 47px;
+}
+
+.button-header-menu {
+  color: var(--basic-white);
+}
+
+.main-header-information{
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.main-header-annotation {
+  width: 197px;
+  height: 71px;
+
+
+  font-style: italic;
+  color: var(--basic-red);
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.header-contacts {
+  text-align: center;
+}
+.header-phone {
+  background: #F3F7F9;
+  border: 3px solid var(--basic-white);
+  box-sizing: border-box;
+  width: 270px;
+  height: 45px;
+  color: var(--basic-red);
+  font-size: 21px;
+  line-height: 30px;
+  padding-top: 7px;
+  padding-right: 45px;
+  padding-bottom: 8px;
+  padding-left: 74px;
+}
+
+.header-address {
+  box-sizing: border-box;
+  margin-top: 3px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--black)
+}
+
+.menu-link{
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  color: inherit;
+}
+
+.site-navigation {
+  box-sizing: border-box;
+  text-align: center;
+  background: #32425C;
+  box-shadow: inset 0px -5px 0px #293449;
+  width: 940px;
+  height: 60px;
+  display: flex;
+}
