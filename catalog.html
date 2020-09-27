@@ -60,9 +60,76 @@
     <li>перфораторы</li>
   </ul>
 
-  <section>
-    <h2>Фильтр товаров</h2>
-    <!--Здесь будет форма-->
+  <section class="filters">
+    <h2 class="visually-hidden">Фильтр товаров</h2>
+    <form action="filter" method="get" action="https://echo.htmlacademy.ru">
+      <section>
+        <h3>Цена:</h3>
+        <div>
+          <input class="filter-option slider-min" id="price-min" type="range" min="0" max="30000" step="10" value="0">
+          <!-- <input class="filter-option slider-max" id="price-max" type="range" min="0" max="30000" step="10" value="0"> -->
+        </div>
+        <div>
+          <input class="visually-hidden filter-input-price filter-price" type="text" name="price" value="0">
+          <span>-</span>
+          <input class="visually-hidden filter-input-price filter-price" type="text" name="price" value="30000">
+        </div>
+      </section>
+      <section>
+        <h3>Производители:</h3>
+        <ul>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bosch"
+              id="filter-bosch" checked>
+            <label for="filter-bosch">Bosch</label>
+          </li>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="interscol"
+              id="filter-interscol">
+            <label for="filter-interscol">Интерскол</label>
+          </li>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="malita"
+              id="filter-makita" checked>
+            <label for="filter-makita">Makita</label>
+          </li>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="dewalt"
+              id="filter-dewalt">
+            <label for="filter-dewalt">DeWalt</label>
+          </li>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hitachi"
+              id="filter-hitachi">
+            <label for="filter-hitachi">Hitachi</label>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>Питание:</h3>
+        <ul>
+          <li class="filter-option filter-radio">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="radio" name="product-group"
+             value="acamulatory" id="filter-acamulatory" checked>
+            <label for="filter-acamulatory">Аккумуляторные</label>
+          </li>
+          <li class="filter-option filter-radio">
+          <input class="visually-hidden filter-input-checkbox filter-input" type="radio" name="product-group"
+             value="network" id="filter-network">
+            <label for="network">Сетевые</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit" class="filter-button button">Показать</button>
+    </form>
+    <article>
+      <h3>Цена:</h3>
+      <input type="text">
+    </article>
+
+    <article>
+
+    </article>
   </section>
 
   <div>
