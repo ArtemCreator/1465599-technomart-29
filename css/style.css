@@ -94,7 +94,7 @@
   color: var(--black)
 }
 
-.menu-user-list {
+.user-navigation {
   font-size: 21px;
   line-height: 21px;
 
@@ -126,6 +126,47 @@
 .container {
   background-color: var(--basic-greylight);
 }
+
+/* Bredcrumbs */
+
+.breadcrumbs {
+  list-style-type: none;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+/* Filters */
+
+.filters {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.filter-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.filters ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+.filter-button {
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Slider Main Page */
 
 .applications-list {
  font-family: "Cuprum", "Arial", sans-serif;
@@ -173,12 +214,15 @@
   text-decoration: none;
 }
 
-/* .popular-goods {
+/* Catalog */
 
-} */
-
-.popular-header {
-  color: var(--basic-white);
+.filter-sorting-list button{
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 0;
+  background-color: inherit;
 }
 
 .headline {
@@ -197,23 +241,41 @@
 
 } */
 
-.product__name-headline {
+.carriers-list {
+}
+
+.catalog-item-title {
   font-size: 18px;
   line-height: 20px;
-  color: inherit;
+  font-weight: 700;
+  color: var(--black);
   text-decoration: none;
 }
 
-.product-old__price {
+.catalog-item-oldprice {
   font-size: 17px;
+  line-height: 18px;
   color: #a9a9a9;
   text-decoration: line-through;
 }
 
-.button-buy {
+.catalog-item-price{
   font-size: 17px;
   color: var(--basic-white);
   background-color: var(--basic-red);
+  border: 0;
+}
+
+/* Pagination */
+
+.pagination-list {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.pagination-item a{
+  text-decoration: none;
+  color: var(--black);
 }
 
 /* .services {
@@ -223,9 +285,6 @@
   color: var(--black);
 }
 
-.services-information {
-
-}
 
 .services-list{
   list-style-type: none;
@@ -262,6 +321,7 @@
   font-size: 13px;
   line-height: 24px;
   color: var(--black);
+  text-transform: none;
 }
 
 .carriers-list {
