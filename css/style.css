@@ -176,6 +176,7 @@
   font-size: 13px;
   line-height: 18px;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 .filters ul {
