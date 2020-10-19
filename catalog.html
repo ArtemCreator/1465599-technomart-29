@@ -16,20 +16,31 @@
 <body class="page-body">
   <div class="page-wrapper">
     <header class="main-header ">
-    <div>
-      <section class="main-header-usermenu loyout-positioner">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo-technomart.svg" width="118" height="18" alt="Логотип интернет-магазина «Техномарт»">
-        </a>
-        <a class="header-menu button-header-menu" href="#">закладки</a>
-        <a class="header-menu button-header-menu" href="#">поиск</a>
-        <a class="header-menu button-header-menu" href="#">корзина</a>
-        <a class="header-menu button-header-menu" href="#">Оформить заказ</a>
-      </section>
+      <div class="main-header-up">
+        <section class="main-header-usermenu loyout-positioner">
+          <a class="main-header-logo">
+            <svg class="header-logo-image" width="108" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M103.85 2.66v14.79h-2.12V2.65h-3.75V1.03h9.62v1.64h-3.75zm-8.14 8.7c-.37.46-.83.79-1.38.98-.56.2-1.22.3-1.99.3A12 12 0 0190 12.4v5.05h-2.12V1.25c.6-.17 1.2-.3 1.8-.36.6-.07 1.25-.11 1.96-.11.94 0 1.74.1 2.4.3.65.19 1.18.51 1.59.97.4.45.7 1.05.9 1.8.18.76.27 1.69.27 2.8 0 1.14-.09 2.1-.27 2.86a4.62 4.62 0 01-.82 1.85zm-1.2-6.82a3.3 3.3 0 00-.55-1.34 2 2 0 00-.95-.7 4.2 4.2 0 00-1.37-.2H90V11h1.64c.53 0 .99-.07 1.37-.2a2 2 0 00.95-.7c.25-.33.44-.77.55-1.34.12-.56.18-1.26.18-2.11 0-.85-.06-1.55-.18-2.11zM82.6 13.22h-4.7l-1.05 4.23h-2.12l4-16.43h3.05l3.99 16.43h-2.11l-1.06-4.23zm-2.3-9.86h-.1l-1.94 8.22h3.99L80.3 3.36zM70.16 5.24h-.12l-3.4 10.1h-2.12l-3.4-10.1H61l-.7 12.21h-2.12l.94-16.43h2.58l3.83 11.26h.1l3.82-11.26h2.58l.94 16.43h-2.1l-.71-12.2zM54.38 15.92c-.44.65-.97 1.1-1.59 1.37-.61.26-1.32.4-2.12.4s-1.5-.14-2.13-.4a3.69 3.69 0 01-1.58-1.37 7.22 7.22 0 01-1-2.6 20.56 20.56 0 01-.34-4.09c0-1.64.11-3 .34-4.1a7.21 7.21 0 011-2.59c.44-.64.97-1.1 1.58-1.36.62-.27 1.33-.4 2.13-.4.8 0 1.5.13 2.12.4.62.27 1.15.72 1.59 1.36.44.64.77 1.5 1 2.6.22 1.08.34 2.45.34 4.1 0 1.64-.12 3-.34 4.09a7.22 7.22 0 01-1 2.6zM53.36 5.76a8.2 8.2 0 00-.65-2.16c-.26-.53-.58-.9-.94-1.1-.36-.2-.73-.31-1.1-.31-.38 0-.74.1-1.1.3-.36.2-.68.58-.94 1.1a8.2 8.2 0 00-.65 2.17c-.16.9-.25 2.06-.25 3.47 0 1.41.09 2.57.25 3.48.17.9.38 1.63.65 2.16.26.53.58.9.94 1.1.36.2.72.3 1.1.3.37 0 .74-.1 1.1-.3.36-.2.68-.57.94-1.1a8.2 8.2 0 00.65-2.16c.16-.91.24-2.07.24-3.48 0-1.4-.08-2.56-.24-3.47zM40.69 9.94h-4.93v7.51h-2.11V1.02h2.11v7.27h4.93V1.02h2.11v16.43h-2.1V9.94zm-11.15 7.51l-2.94-7.04-2.93 7.04h-2.11L25.08 9 21.9 1.02h2.11l2.58 6.57 2.59-6.57h2.11L28.13 9l3.52 8.45h-2.11zM12.28 1.02h7.99v1.64H14.4v5.4h5.16V9.7H14.4v6.1h5.87v1.65h-7.99V1.02zM6.65 17.45H4.54V2.65H.78V1.03h9.62v1.64H6.65v14.79z"
+                fill="#fff" /></svg>
+          </a>
+          <div class="search">
+            <form action="#" method="get">
+              <label for="search"></label>
+              <input type="search" name="search" id="search" placeholder="Поиск:" required>
+            </form>
+          </div>
+          <a class="header-menu bookmarks" href="#">закладки</a>
+          <a class="header-menu basket" href="#">корзина</a>
+          <a class="header-menu checkout" href="#">Оформить заказ</a>
+        </section>
+      </div>
+
       <div class="main-header-information loyout-positioner">
         <p class="main-header-annotation">
           Интернет-магазин строительных материалов и инструментов для ремонта
         </p>
+
         <div class="header-contacts">
           <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <address class="header-address">
@@ -37,35 +48,39 @@
           </address>
         </div>
         <div class="user-navigation">
-          <button>Равшан Джамшутович</button>
+          <button class="user-link">Равшан Джамшутович</button>
           <ul class="user-menu-list">
             <li><a class="my-orders" href="#">Мои заказы</a></li>
             <li><a class="my-cabinet" href="#">Личный кабинет</a></li>
           </ul>
         </div>
       </div>
-      <nav class="site-navigation">
+
+      <nav class="site-navigation loyout-positioner">
         <ul class="site-navigation-list">
-          <li><a class="header-site-navigation" href="#">Контакты</a></li>
-          <li><a class="header-site-navigation">Главная</a></li>
-          <li><a class="header-site-navigation" href="#">Компания</a></li>
-          <li><a class="header-site-navigation" href="catalog.html">Каталог</a></li>
-          <li><a class="header-site-navigation" href="#">Новости</a></li>
-          <li><a class="header-site-navigation" href="#">Спецпредложения</a></li>
-          <li><a class="header-site-navigation" href="#">Доставка</a></li>
+          <li class="header-site-navigation"><a href="index.html">Главная</a></li>
+          <li class="header-site-navigation"><a href="#">Компания</a></li>
+          <li class="header-site-navigation"><a href="catalog.html">Каталог</a></li>
+          <li class="header-site-navigation"><a href="#">Новости</a></li>
+          <li class="header-site-navigation"><a href="#">Спецпредложения</a></li>
+          <li class="header-site-navigation"><a href="#">Доставка</a></li>
+          <li class="header-site-navigation"><a href="#">Контакты</a></li>
         </ul>
       </nav>
-    </div>
+  </div>
   </header>
 
   <main class="page-catalog container loyout-positioner">
-    <ul class="breadcrumbs">
-      <li><a href="index.html"><span></span></a></li>
-      <li><a href="#">Каталог</a></li>
-      <li><a href="#">Инструмент</a></li>
-      <li>перфораторы</li>
-    </ul>
-    <h1 class="headline page-title">Перфораторы</h1>
+    <header class="page-title" >
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item"><a href="index.html"><span></span></a></li>
+        <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
+        <li class="breadcrumbs-item"><a href="#">Инструмент</a></li>
+        <li class="breadcrumbs-item breadcrumbs-current">перфораторы</li>
+      </ul>
+      <h1 class="headline headline-categories container-categories"">Перфораторы</h1>
+    </header>
+
 
     <section class="filters">
       <h2 class="filter-title">Фильтр:</h2>
@@ -146,7 +161,12 @@
         <h2 class="visually-hidden">Каталог перфораторов</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <img class="catalog-item-image" src="img/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+            <div class="">
+
+            </div>
+
+            <img class="catalog-item-image" src="img/bosch6000.jpg" width="144" height="128"
+              alt="Перфоратор BOSCH BFG 6000">
             <a href="#">
               <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
             </a>
@@ -157,7 +177,8 @@
           </li>
 
           <li class="catalog-item">
-            <img class="catalog-item-image" src="img/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+            <img class="catalog-item-image" src="img/bosch6000.jpg" width="144" height="128"
+              alt="Перфоратор BOSCH BFG 6000">
             <a href="#">
               <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
             </a>
@@ -168,7 +189,8 @@
           </li>
 
           <li class="catalog-item">
-            <img class="catalog-item-image" src="img/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+            <img class="catalog-item-image" src="img/bosch6000.jpg" width="144" height="128"
+              alt="Перфоратор BOSCH BFG 6000">
             <a href="#">
               <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
             </a>
@@ -179,7 +201,8 @@
           </li>
 
           <li class="catalog-item">
-            <img class="catalog-item-image" src="img/bosch3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"></p>
+            <img class="catalog-item-image" src="img/bosch3000.jpg" width="127" height="112"
+              alt="Перфоратор BOSCH BFG 2000"></p>
             <a href="#">
               <h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
             </a>
@@ -192,7 +215,8 @@
           </li>
 
           <li class="catalog-item">
-            <img class="catalog-item-image" src="img/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+            <img class="catalog-item-image" src="img/bosch6000.jpg" width="144" height="128"
+              alt="Перфоратор BOSCH BFG 6000">
             <a href="#">
               <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
             </a>
@@ -203,7 +227,8 @@
           </li>
 
           <li class="catalog-item">
-            <img class="catalog-item-title" src="img/bosch2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+            <img class="catalog-item-title" src="img/bosch2000.jpg" width="127" height="112"
+              alt="Перфоратор BOSCH BFG 2000">
             <a href="#">
               <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
             </a>
@@ -214,7 +239,8 @@
           </li>
 
           <li class="catalog-item">
-            <img class="catalog-item-image" src="img/bosch3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"></p>
+            <img class="catalog-item-image" src="img/bosch3000.jpg" width="127" height="112"
+              alt="Перфоратор BOSCH BFG 2000"></p>
             <a href="#">
               <h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
             </a>
@@ -226,7 +252,8 @@
           </li>
 
           <li class="catalog-item">
-            <img class="catalog-item-image" src="img/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+            <img class="catalog-item-image" src="img/bosch6000.jpg" width="144" height="128"
+              alt="Перфоратор BOSCH BFG 6000">
             <a href="#">
               <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
             </a>
@@ -237,7 +264,8 @@
           </li>
 
           <li class="catalog-item">
-            <img class="catalog-item-title" src="img/bosch2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+            <img class="catalog-item-title" src="img/bosch2000.jpg" width="127" height="112"
+              alt="Перфоратор BOSCH BFG 2000">
             <a href="#">
               <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
             </a>
@@ -257,88 +285,108 @@
       </section>
     </div>
 
-    <section class="catalog-information">
+    <section class="catalog-information loyout-positioner">
       <h2 class="headline-categories headline-black-colors">пара слов о перфораторах</h2>
       <p>Перфоратор - универсальный инструмент. Предназначен для сверления и долбления отверстий в
         кирпиче, бетоне и камне.
-        Существует электрические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+        <br>Существует электрические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
         шуруповерта и отбойного молотка.
-        В ассортиментном ряду есть выбор &QUOT;трехрежимников&QUOT;: в одном устройстве будут совмщены отбойный
+        <br>В ассортиментном ряду есть выбор &QUOT;трехрежимников&QUOT;: в одном устройстве будут совмщены отбойный
         молоток и ударная дрель.
       </p>
     </section>
   </main>
 
-  <footer class="main-footer loyout-positioner">
-    <section class="footer">
+  <footer class="main-footer">
+
+    <div class="footer loyout-positioner">
       <div class="footer-navigation">
         <a class="footer-logo">
-          <img src="#" width="220" height="68" alt="Логотип интернет-магазина «Техномарт»">
+          <svg width="138" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M132.7 3.4v18.9H130V3.4h-4.8V1.3h12.3v2.1h-4.8zM122.3 14.5a3.86 3.86 0 01-1.77 1.26c-.71.25-1.56.38-2.54.38a15.32 15.32 0 01-3-.3v6.45h-2.7V1.6c.76-.22 1.53-.38 2.3-.47.77-.09 1.6-.13 2.5-.13 1.2 0 2.22.12 3.06.37.84.25 1.52.67 2.04 1.25s.9 1.35 1.14 2.3a15 15 0 01.36 3.58c0 1.46-.11 2.68-.34 3.66a5.9 5.9 0 01-1.05 2.35zm-1.53-8.71a4.22 4.22 0 00-.7-1.71 2.55 2.55 0 00-1.22-.89 5.37 5.37 0 00-1.76-.25H115v11.1h2.1c.68 0 1.27-.09 1.76-.26s.9-.46 1.21-.88c.32-.42.56-1 .7-1.71.16-.72.23-1.62.23-2.7s-.07-1.98-.22-2.7zm-15.23 11.1h-6l-1.35 5.4h-2.7l5.1-21h3.9l5.1 21h-2.7l-1.35-5.4zM102.6 4.3h-.12L100 14.8h5.1L102.6 4.3zM89.64 6.7h-.15l-4.35 12.9h-2.7L78.1 6.7h-.15l-.9 15.6h-2.7l1.2-21h3.3l4.9 14.4h.11l4.9-14.4h3.3l1.2 21h-2.7l-.9-15.6zM69.48 20.35a4.71 4.71 0 01-2.02 1.74c-.8.34-1.7.5-2.72.5a6.81 6.81 0 01-2.71-.5A4.71 4.71 0 0160 20.35a9.22 9.22 0 01-1.27-3.32 26.26 26.26 0 01-.44-5.23c0-2.1.15-3.85.44-5.24.29-1.39.71-2.5 1.27-3.31a4.71 4.71 0 012.03-1.74c.79-.34 1.7-.51 2.71-.51 1.02 0 1.93.17 2.72.5.79.35 1.46.93 2.02 1.75s.99 1.92 1.28 3.31c.29 1.4.43 3.14.43 5.24s-.14 3.84-.43 5.23a9.22 9.22 0 01-1.28 3.32zm-1.3-13a10.48 10.48 0 00-.83-2.75 3.18 3.18 0 00-1.2-1.41 2.83 2.83 0 00-1.4-.4c-.49 0-.96.14-1.42.4-.46.26-.86.73-1.2 1.4-.34.69-.61 1.6-.82 2.77a25.69 25.69 0 00-.32 4.44c0 1.8.1 3.28.32 4.44.2 1.16.48 2.08.82 2.76.34.68.74 1.15 1.2 1.4.46.27.93.4 1.41.4.48 0 .95-.13 1.41-.4.46-.25.86-.72 1.2-1.4.34-.68.62-1.6.83-2.76.2-1.16.31-2.64.31-4.44 0-1.8-.1-3.28-.31-4.44zM51.99 12.7h-6.3v9.6H43v-21h2.7v9.3H52V1.3h2.7v21H52v-9.6zm-14.25 9.6l-3.75-9-3.75 9h-2.7l4.5-10.8L28 1.3h2.7L34 9.7l3.3-8.4H40l-4.05 10.2 4.5 10.8h-2.7zM15.7 1.3h10.2v2.1h-7.5v6.9H25v2.1h-6.6v7.8h7.5v2.1H15.7v-21zm-7.2 21H5.8V3.4H1V1.3h12.3v2.1H8.5v18.9z"
+              fill="#fff" /></svg>
         </a>
         <address class="footer-address footer-contacts">
           г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
           <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </address>
       </div>
+
       <nav class="footer-navigation-list">
         <ul class="footer-navigation-infolist">
+          <li class="footer-navigation-infoitem"><a class="footer-site-navigation" href="#">Компания</a></li>
           <li class="footer-navigation-infoitem"><a class="footer-site-navigation" href="#">Новости</a></li>
           <li class="footer-navigation-infoitem"><a class="footer-site-navigation" href="#">Каталог</a></li>
           <li class="footer-navigation-infoitem"><a class="footer-site-navigation" href="#">Доставка</a></li>
-          <li class="footer-navigation-infoitem"><a class="footer-site-navigation" href="#">Компания</a></li>
           <li class="footer-navigation-infoitem"><a class="footer-site-navigation" href="#">Контакты</a></li>
         </ul>
         <ul class="footer-navigation-applications-list">
-          <li class="footer-navigation-applications-item"><a class="footer-site-navigation" href="#">Материалы</a></li>
+          <li class="footer-navigation-applications-item"><a class="footer-site-navigation" href="#">Материалы</a>
+          </li>
           <li class="footer-navigation-applications-item"><a class="footer-site-navigation" href="#">Техника</a></li>
-          <li class="footer-navigation-applications-item"><a class="footer-site-navigation" href="#">Инструмент</a></li>
+          <li class="footer-navigation-applications-item"><a class="footer-site-navigation" href="#">Инструмент</a>
+          </li>
           <li class="footer-navigation-applications-item"><a class="footer-site-navigation" href="#">Спецпредложения</a>
           </li>
         </ul>
       </nav>
-    </section>
+    </div>
 
-    <section class="footer-copiright-social social-loyout">
-      <p class="footer-copiright-info">
-        © 2010–2019 Компания «Техномарт»
-        <br>Все права защищены
-      </p>
-      <div class="footer-social">
-        <ul class="footer-social-list">
-          <li class="footer-social-vk">
-            <a class="social-button" href="#"></a>
-            <span class="visually-hidden">ВКонтакте</span>
-            <svg width="27" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.14 12.51c.95-.3 2.18 2.04 3.48 2.94.98.68 1.73.53 1.73.53l3.47-.05s1.82-.1.96-1.55c-.07-.12-.5-1.07-2.59-3.02-2.17-2.05-1.88-1.72.74-5.25 1.6-2.15 2.24-3.47 2.04-4.03-.2-.53-1.37-.4-1.37-.4l-3.91.03c-.38 0-.7.12-.85.52 0 0-.62 1.66-1.45 3.08-1.74 2.99-2.43 3.14-2.72 2.96-.66-.44-.5-1.74-.5-2.67 0-2.9.44-4.1-.84-4.41A6.6 6.6 0 0012.5 1c-1.39-.02-2.57 0-3.24.33-.45.23-.79.72-.58.74.26.04.84.16 1.15.59.4.55.4 1.79.4 1.79s.22 3.41-.55 3.83c-.53.3-1.25-.3-2.8-3.01-.8-1.4-1.4-2.93-1.4-2.93s-.1-.28-.32-.44c-.25-.18-.6-.24-.6-.24l-3.71.02s-.56.02-.76.27c-.19.21-.02.66-.02.66s2.9 6.88 6.2 10.35c3.02 3.18 6.46 2.97 6.46 2.97h1.55s.47-.05.7-.31c.23-.24.22-.7.22-.7s-.03-2.1.94-2.41z"
-                fill="#fff" /></svg>
-          </li>
-          <li class="footer-social-facebook">
-            <a class="social-button" href="#"></a>
-            <span class="visually-hidden">Фейсбук</span>
-            <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff" /></svg>
-          </li>
-          <li class="footer-social-instagram">
-            <a class="social-button" href="#"></a>
-            <span class="visually-hidden">Инстаграм</span>
-            <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M3 0h15a3 3 0 013 3v15a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM3 18V9h1.18a6.5 6.5 0 1012.64 0H18v9H3zM14 7h4V3h-4v4z"
-                fill="#fff" /></svg>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-copiright footer-copiright-loyout">
+
+
+    <section class="footer-copiright-social">
+      <div class="loyout-positioner">
         <p class="footer-copiright-info">
-          Обратная связь:
+          © 2010–2019 Компания «Техномарт»
+          Все права защищены
         </p>
-        <a class="footer-copiright-address">mail@htmlacademy.ru</a>
-        <p class="footer-copiright-info">
-          Разработано -
-        </p>
-        <a class="footer-copiright-address" href="https://htmlacademy.ru/">htmlacademy.ru</a>
+        <div class="footer-social">
+          <ul class="footer-social-list">
+            <li class="footer-social-vk">
+              <a class="social-button" href="#">
+                <svg width="27" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.14 12.51c.95-.3 2.18 2.04 3.48 2.94.98.68 1.73.53 1.73.53l3.47-.05s1.82-.1.96-1.55c-.07-.12-.5-1.07-2.59-3.02-2.17-2.05-1.88-1.72.74-5.25 1.6-2.15 2.24-3.47 2.04-4.03-.2-.53-1.37-.4-1.37-.4l-3.91.03c-.38 0-.7.12-.85.52 0 0-.62 1.66-1.45 3.08-1.74 2.99-2.43 3.14-2.72 2.96-.66-.44-.5-1.74-.5-2.67 0-2.9.44-4.1-.84-4.41A6.6 6.6 0 0012.5 1c-1.39-.02-2.57 0-3.24.33-.45.23-.79.72-.58.74.26.04.84.16 1.15.59.4.55.4 1.79.4 1.79s.22 3.41-.55 3.83c-.53.3-1.25-.3-2.8-3.01-.8-1.4-1.4-2.93-1.4-2.93s-.1-.28-.32-.44c-.25-.18-.6-.24-.6-.24l-3.71.02s-.56.02-.76.27c-.19.21-.02.66-.02.66s2.9 6.88 6.2 10.35c3.02 3.18 6.46 2.97 6.46 2.97h1.55s.47-.05.7-.31c.23-.24.22-.7.22-.7s-.03-2.1.94-2.41z"
+                    fill="#fff" /></svg>
+              </a>
+              <span class="visually-hidden">ВКонтакте</span>
+            </li>
+            <li class="footer-social-facebook">
+              <a class="social-button" href="#">
+                <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff" /></svg>
+
+              </a>
+              <span class="visually-hidden">Фейсбук</span>
+            </li>
+            <li class="footer-social-instagram">
+              <a class="social-button" href="#">
+                <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3 0h15a3 3 0 013 3v15a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM3 18V9h1.18a6.5 6.5 0 1012.64 0H18v9H3zM14 7h4V3h-4v4z"
+                    fill="#fff" /></svg>
+              </a>
+              <span class="visually-hidden">Инстаграм</span>
+            </li>
+          </ul>
+        </div>
+        <section class="footer-copiright footer-copiright-loyout">
+          <div>
+            <p class="footer-copiright-feedback">
+              Обратная связь:
+            </p>
+            <a class="footer-copiright-address">mail@htmlacademy.ru</a>
+          </div>
+
+          <div class="footer-copi">
+            <p class="footer-copiright-source">
+              Разработано -
+            </p>
+            <a class="footer-copiright-address" href="https://htmlacademy.ru/">htmlacademy.ru</a>
+          </div>
       </div>
+    </section>
     </section>
   </footer>
   </div>
@@ -346,8 +394,11 @@
 </body>
 
 <section class="modal-add-product">
-  <p>Товар добавлен в корзину</p>
-  <button type="button">Закрыть</button>
+  <div>
+      <p>Товар добавлен в корзину</p>
+  <button class="closed" type="button">Закрыть</button>
+  </div>
+
   <div class="buttons-add-product">
     <a class="button button-notify" href="#">Оформить заказ</a>
     <button class="button" type="button">Продолжить покупки</button>
