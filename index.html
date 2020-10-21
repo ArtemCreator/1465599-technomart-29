@@ -26,14 +26,13 @@
           </a>
           <div class="search">
             <form action="#" method="get">
-              <label for="search"></label>
-              <input type="search" name="search" id="search" placeholder="Поиск:" required>
+              <label class="search-label" id="search"></label>
+              <input type="search" name="search" for="search" placeholder="Поиск:" required>
             </form>
-
           </div>
 
-          <a class="header-menu bookmarks" href="#">закладки</a>
-          <a class="header-menu basket" href="#">корзина</a>
+          <a class="header-menu bookmarks" href="#">Закладки:</a>
+          <a class="header-menu basket" href="#">Корзина:</a>
           <a class="header-menu checkout" href="#">Оформить заказ</a>
 
 
@@ -75,6 +74,7 @@
     <h1 class="visually-hidden">интернет-магазин «Техномарт»</h1>
     <section class="applications-list">
       <article class="applications-item">
+        <span class="new-span"></span>
         <h2 class="headline aplications-headline">Материалы</h2>
         <a class="button applications-button" href="#">на любой вкус</a>
       </article>
@@ -140,7 +140,7 @@
         <li class="popular-goods-item">
           <div class="catalog-image-box">
             <img class="catalog-item-image" src="img/bosch9000.jpg" width="184" height="164"
-              alt="Перфоратор BOSCH BFG 9000">
+            alt="Перфоратор BOSCH BFG 9000">
           </div>
           <a class="catalog-item-title" href="#">
             <h3>Перфоратор BOSCH BFG 9000</h3>
@@ -151,6 +151,7 @@
           </p>
         </li>
         <li class="popular-goods-item">
+          <span class="new-span"></span>
           <div class="catalog-image-box">
             <img class="catalog-item-image" src="img/bosch3000.jpg" width="127" height="122"
               alt="Перфоратор BOSCH BFG 3000">
@@ -177,6 +178,7 @@
           </p>
         </li>
         <li class="popular-goods-item">
+          <span class="new-span"></span>
           <div class="catalog-image-box">
             <img class="catalog-item-image" src="img/bosch2000.jpg" width="127" height="112"
               alt="Перфоратор BOSCH BFG 2000">
@@ -293,7 +295,7 @@
 
     </section>
 
-    <section class="company-info loyout-positioner">
+    <section class="company-info loyout-positioner company-loyout">
       <h2 class="visually-hidden">Информация о компании</h2>
       <article class="company-info-box">
         <h3 class="headline headline-categories headline-black-colors">Компания «Техномарт»</h3>
