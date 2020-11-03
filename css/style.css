@@ -404,9 +404,10 @@ input[type="search"]:hover {
   padding-left: 21px;
 }
 
-.user-link:hover,
+.user-link:hover::before,
+.user-link:hover::after,
 .user-link:focus {
-  color: var(--basic-red);
+  opacity: 1;
 }
 
 .user-menu-list {
@@ -517,13 +518,13 @@ user-menu-list li:last-child {
   padding: 12px 24px;
 }
 
-.login-link:hover,
-.authorization:hover {
+.my-orders:hover,
+.my-cabinet:hover {
   color: var(--basic-red);
 }
 
-.login-link:active,
-.authorization:active {
+.my-orders:active,
+.my-cabinet:active {
   color: var(--basic-greylight);
 }
 
@@ -615,17 +616,23 @@ user-menu-list li:last-child {
 
 /* Filters */
 
-.filter-title {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 18px;
-  background-color: var(--beige-background);
-}
-
 .filters {
   width: 220px;
   font-size: 15px;
   line-height: 19px;
+  text-transform: uppercase;
+}
+
+.filter-title,
+.filter-sorting-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  margin-top: 0;
+  background-color: var(--beige-background);
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
@@ -634,7 +641,22 @@ user-menu-list li:last-child {
   margin: 0 0 20px;
   border: none;
 }
+
+.filter-headline::before{
+  content: "";
+  display: block;
+  width: 220px;
+  height: 1px;
+  background-color: var(--grey-border-pagination);
+  margin-bottom: 16px;
+}
+
+/* .filter-headline:first-child::before{
+  display: none;
+} */
+
 .filter-headline {
+  font-size: 17px;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -708,12 +730,7 @@ user-menu-list li:last-child {
   margin: 3px;
 }
 
-.filter-title {
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: normal;
-  text-transform: uppercase;
-}
+
 
 /* Filter manifacturer */
 
@@ -754,8 +771,8 @@ user-menu-list li:last-child {
 .label:hover {
   color: #b5b5b5;
 }
-.filter-input-checkbox + .label::before,
-.filter-input-checkbox + .label::after {
+.label::before,
+.label::after {
   content: "";
   position: absolute;
   left: -40px;
@@ -1130,13 +1147,12 @@ filter-input-checkbox ~ .label::after {
   align-items:center;
   justify-content: flex-start;
   height: 38px;
-  margin-top: 10px;
   margin-bottom: 20px;
   background-color: #f7f3ec;
   border-radius: 3px;
 }
 
-.filter-title {
+.filter-sorting-title {
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 139px;
@@ -1282,7 +1298,7 @@ filter-input-checkbox ~ .label::after {
 
 .page-title .container-categories {
   padding-left: 29px;
-
+  margin-bottom: 20px;
   background-color: var(--grey-background-categories);
 }
 
