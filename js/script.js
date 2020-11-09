@@ -12,7 +12,7 @@ close.addEventListener("click", function(evt) {
   popup.classList.remove("modal-show");
 });
 
-const linkfeed = document.querySelector(".footer-copiright-address");
+const linkfeed = document.querySelector(".btn-feed");
 const popupfeed = document.querySelector(".modal-feedback");
 const closed = document.querySelector(".modal-close");
 const form = popupfeed.querySelector(".feedback-form");
