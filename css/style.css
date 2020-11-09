@@ -819,7 +819,7 @@ fieldset:nth-child(2) {
 }
 
 .filter-manifactur legend {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .filter ul {
@@ -863,25 +863,25 @@ fieldset:nth-child(2) {
 .label::after {
   content: "";
   position: absolute;
-  left: -40px;
-  top: -5px;
-  width: 23px;
-  height: 23px;
+  left: -37px;
+  top: -2px;
+  width: 20px;
+  height: 20px;
   color: #c5c5c5;
   border: #c5c5c5;
   border-radius: 2px;
 }
 
 .filter-input-checkbox + .label::before {
-  width: 23px;
-  height: 23px;
+  width: 19px;
+  height: 19px;
   border: 2px solid;
   border-radius: 2.5px;
 }
 
 filter-input-checkbox ~ .label::after {
   display: none;
-  width: 20px;
+  width: 18px;
   height: 8px;
 
   position: absolute;
@@ -893,8 +893,8 @@ filter-input-checkbox ~ .label::after {
   content: "";
   display: block;
   position: absolute;
-  top: 10px;
-  left: -40px;
+  top: 9px;
+  left: -39px;
   width: 20px;
   height: 8px;
   border-left: 4px solid;
@@ -903,15 +903,23 @@ filter-input-checkbox ~ .label::after {
   filter: drop-shadow(0 3px 0 white) drop-shadow(0 -3px 0 white);
 }
 
+.filter-manifactur .filter-option:last-child {
+  margin-bottom: 10px;
+}
+
 /* Filter Radiobutton */
+
+.filter-power .filter-headline {
+  margin-bottom: 34px;
+}
 
 .filter-input-radio ~ .label::before {
   content: "";
   position: absolute;
-  left: -30px;
+  left: -37px;
   top: -1px;
-  width: 13px;
-  height: 13px;
+  width: 17px;
+  height: 17px;
   border: 4px solid var(--basic-greylight);
   border-radius: 50%;
 }
@@ -919,8 +927,8 @@ filter-input-checkbox ~ .label::after {
 .filter-input-radio:checked ~ .label::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: -24px;
+  top: 7px;
+  left: -29px;
   width: 9px;
   height: 9px;
   background-color: var(--basic-greylight);
@@ -941,6 +949,10 @@ filter-input-checkbox ~ .label::after {
   background: var(--basic-white);
   border: 1px solid var(--grey-border-pagination);
   box-sizing: border-box;
+}
+
+.filter-power .filter-option:last-child {
+  margin-bottom: 40px;
 }
 
 /* Slider Main Page */
@@ -1257,7 +1269,7 @@ filter-input-checkbox ~ .label::after {
   align-items:center;
   justify-content: flex-start;
   height: 38px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   background-color: #f7f3ec;
   border-radius: 3px;
 }
@@ -1304,44 +1316,52 @@ filter-input-checkbox ~ .label::after {
 .filter-sorting-item button{
   text-transform: uppercase;
   padding: 0;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
+  border: 0;
   background-color: inherit;
-  margin-right: 15px;
 }
 
-.sorting-arrows-up {
-  position: relative;
+.sorting-type {
+  margin-right: 65px;
 }
 
-.sorting-arrows-up:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: -150px;
-  border: 6px solid transparent;
-  border-bottom: 13px solid var(--basic-greylight);
-  cursor: pointer;
+.sorting-price {
+  margin-right: 70px;
 }
 
-.filter-sorting-list.current {
-
-  border-bottom: (--basic-red);
+.filter-sorting-item:last-child button{
+  margin-right: 0;
 }
 
-.sorting-arrows-down{
-  position: relative;
+.btn-arrow-up {
+  display: flex;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5px 10px 5px;
+  border-color: transparent transparent gray transparent;
+  text-decoration: underline;
+  margin-left: 48px;
 }
 
-.sorting-arrows-down:after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  right: -170px;
-  border: 6px solid transparent; /* Прозрачные границы */
-  border-top: 13px solid var(--basic-greylight); /* Добавляем треугольник */
-  cursor: pointer;
+.btn-arrow-down {
+  display: flex;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 5px 0 5px;
+  border-color: gray transparent transparent transparent;
+  text-decoration: none;
+  margin-left: 21px;
+}
+
+.sorting-arrows:hover .btn-arrow-up,
+.current .btn-arrow-up {
+  border-color: transparent transparent var(--basic-red) transparent;
+}
+
+.sorting-arrows:hover .btn-arrow-down,
+.current .btn-arrow-down {
+  border-color: var(--basic-red) transparent transparent transparent;
 }
 
 
@@ -1683,7 +1703,7 @@ filter-input-checkbox ~ .label::after {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-top: 34px;
+  margin-top: 42px;
   margin-bottom: 59px;
   padding: 0;
 }
@@ -1692,8 +1712,8 @@ filter-input-checkbox ~ .label::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   border: 1px solid var(--grey-border-pagination);
   border-radius: 5px;
 }
@@ -2012,6 +2032,10 @@ filter-input-checkbox ~ .label::after {
   background-color: var(--basic-background);
 }
 
+.catalog-information .headline {
+  margin-bottom: 33px;
+}
+
 .catalog-information p {
   display: block;
   margin: 0fr;
@@ -2070,7 +2094,7 @@ filter-input-checkbox ~ .label::after {
   font-family: "Cuprum", "Arial", sans-serif;
   width: 600px;
   box-sizing: border-box;
-  margin-top: 39px;
+  margin-top: 22px;
 }
 
 .footer-navigation-infolist {
@@ -2134,13 +2158,12 @@ filter-input-checkbox ~ .label::after {
 .footer-copiright-social .loyout-positioner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
 }
 
 .footer-copiright-social {
   background-color: var(--basic-blackdark);
   font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   color: var(--basic-white);
   padding-top: 34px;
@@ -2182,10 +2205,9 @@ filter-input-checkbox ~ .label::after {
   width: 44px;
   height: 44px;
   background-color: var(--basic-blackdark);
-  border-radius: 22px;
   background: var(--black-background-social);
-  border-radius: 50px;
-  margin-right: 4px;
+  border-radius: 50%;
+  margin-right: 3px;
 }
 
 .social-button:last-child {
