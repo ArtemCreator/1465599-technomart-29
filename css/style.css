@@ -2323,7 +2323,6 @@ filter-input-checkbox ~ .label::after {
   justify-content: center;
   margin-left: 0;
   padding-top: 39px;
-  padding-bottom: 37px;
 }
 
 .feedback-form-item {
@@ -2363,6 +2362,7 @@ filter-input-checkbox ~ .label::after {
   resize: none;
   max-width: 460px;
   max-height: 114px;
+  margin-bottom: 39px;
 }
 
 .feedback-form-textarea label {
@@ -2401,7 +2401,6 @@ filter-input-checkbox ~ .label::after {
 /* Modal Map */
 
 .modal-map {
-  display: none;
   width: 943px;
   height: 449px;
   border-top: 7px solid var(--basic-red);
@@ -2447,7 +2446,9 @@ filter-input-checkbox ~ .label::after {
 .buttons-add-product,
 .battons-box {
   padding-top: 37px;
+  padding-left: 80px;
   padding-bottom: 37px;
+  padding-right: 80px;
   background-color: #f4f4f4;
   display: flex;
   justify-content: center;

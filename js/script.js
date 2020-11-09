@@ -14,7 +14,6 @@ close.addEventListener("click", function(evt) {
 
 const linkfeed = document.querySelector(".btn-feed");
 const popupfeed = document.querySelector(".modal-feedback");
-const closed = document.querySelector(".modal-close");
 const form = popupfeed.querySelector(".feedback-form");
 const fullNameUser = popupfeed.querySelector("[name=name-user]");
 const email = popupfeed.querySelector("[name=email]");
@@ -48,9 +47,12 @@ try{
   isStorageSupport = false;
 }
 
-closed.addEventListener("click", function (evt) {
+close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupfeed.classList.remove("modal-show");
 });
 
-
+close.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
+});
