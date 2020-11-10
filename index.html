@@ -26,14 +26,14 @@
         <div>
           <form class="search" action="#" method="get">
 
-            <label class="search-label" id="search">
+            <label class="search-label" for="search">
               <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z"
                   fill="#fff" />
-                </>
+              </svg>
             </label>
-            <input type="search" name="search" for="search" placeholder="Поиск:" required>
+            <input type="search" name="search" id="search" placeholder="Поиск:" required>
           </form>
         </div>
 
@@ -75,23 +75,23 @@
                 fill=none /></svg>
             <a class="login-link" href="#">Войти</a></li>
           <li class="user-navigation-item">
-            <a class="authorization" href="#"">Регистрация</a>
+            <a class="authorization" href="#">Регистрация</a>
           </li>
         </ul>
       </div>
 
       <nav class=" site-navigation loyout-positioner">
-              <ul class="site-navigation-list">
-                <li class="header-site-navigation"><a>Главная</a></li>
-                <li class="header-site-navigation"><a href="#">Компания</a></li>
-                <li class="header-site-navigation"><a href="catalog.html">Каталог</a></li>
-                <li class="header-site-navigation"><a href="#">Новости</a></li>
-                <li class="header-site-navigation"><a href="#">Спецпредложения</a></li>
-                <li class="header-site-navigation"><a href="#">Доставка</a></li>
-                <li class="header-site-navigation"><a href="#">Контакты</a></li>
-              </ul>
-              </nav>
-      </div>
+        <ul class="site-navigation-list">
+          <li class="header-site-navigation"><a>Главная</a></li>
+          <li class="header-site-navigation"><a href="#">Компания</a></li>
+          <li class="header-site-navigation"><a href="catalog.html">Каталог</a></li>
+          <li class="header-site-navigation"><a href="#">Новости</a></li>
+          <li class="header-site-navigation"><a href="#">Спецпредложения</a></li>
+          <li class="header-site-navigation"><a href="#">Доставка</a></li>
+          <li class="header-site-navigation"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+
     </header>
 
     <main class="">
@@ -125,15 +125,15 @@
             <input type="radio" class="slider-radiobox slider-radiobox-second" id="slide-2" name="slide">
 
             <div class="slider-pagination">
-              <label class="current slider-control slider-control-second" for="slide-1" type="button"
+              <label class="current slider-control slider-control-second" for="slide-1"
                 aria-label="Первый слайд"></label>
-              <label class="slider-control slider-control-second" for="slide-2" type="button"
+              <label class="slider-control slider-control-second" for="slide-2"
                 aria-label="Второй слайд"></label>
             </div>
 
             <div class="slider-controls">
-              <label class="slider-arrow button-back" for="slide-1" type="button" aria-label="Назад"></label>
-              <label class="slider-arrow button-next" for="slide-2" type="button" aria-label="Вперед"></label>
+              <button class="slider-arrow button-back" for="slide-1" type="button" aria-label="Назад"></button>
+              <button class="slider-arrow button-next" for="slide-2" type="button" aria-label="Вперед"></button>
             </div>
 
             <div class="slides">
@@ -245,7 +245,7 @@
           <ul class="popular-manifacturer-list">
             <li class="popular-manifacturer-item">
               <a href="#">
-                <img src="img/logo-bosch.jpg" width="126" height=37" alt="Логотип «Bosch»">
+                <img src="img/logo-bosch.jpg" width="126" height="37" alt="Логотип «Bosch»">
               </a>
             </li>
             <li class="popular-manifacturer-item">
@@ -255,7 +255,7 @@
             </li>
             <li class="popular-manifacturer-item">
               <a href="#">
-                <img src="img/logo-dewalt .jpg" width="146" height="44" alt="Логотип «DeWALT»">
+                <img src="img/logo-dewalt.jpg" width="146" height="44" alt="Логотип «DeWALT»">
               </a>
             </li>
             <li class="popular-manifacturer-item">
@@ -314,7 +314,7 @@
             </ul>
           </article>
 
-          <div class="services-delivery service-loyout" for="service-delivery">
+          <div class="services-delivery service-loyout">
             <span class="headline headline-categories">Доставка</span>
             <p class="paragraph">Мы с удовольствием доставим ваш товар прямо</p>
             <p class="paragraph">к вашему подъезду совершенно бесплатно!</p>
@@ -332,7 +332,6 @@
           <p class="paragraph">возгоранием, вы всегда можете быть уверены в нашей</p>
           <p class="paragraph">гарантии. Мы обменяем сгоревший товар на новый.</p>
           <p class="paragraph">Дом уж восстановите как-нибудь сами.</p>
-          </p>
           <span class="garantee"></span>
         </div>
 
@@ -341,9 +340,9 @@
           <p class="paragraph">
             Залезть в долговую яму стало проще!
           </p>
-          <p>
+          <p class="paragraph">
             Кредитные консультанты придут вам на помощь.
-          </p class="paragraph">
+          </p>
           <button class="button button-notify">Отправить заявку</button>
           <span class="credit"></span>
         </div>
@@ -510,10 +509,11 @@
       <textarea name="info" id="info" cols="61" rows="6" placeholder="В свободной форме"></textarea>
     </p>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
-      <div class="battons-box">
-        <button class="button button-notify" type="submit" href="https://echo.htmlacademy.ru/">Отправить</button>
-      </div>
+    <div class="battons-box">
+      <button class="button button-notify" type="submit" href="https://echo.htmlacademy.ru/">Отправить</button>
+    </div>
   </form>
 </section>
 <script src="js/script.js"></script>
+
 </html>

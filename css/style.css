@@ -192,7 +192,7 @@
   margin-bottom: 46px;
   height: 42px;
   display: flex;
-  justify-self: space-between;
+  justify-content: space-between;
   text-align: center;
 }
 
@@ -381,7 +381,6 @@ input[type="search"]:focus {
   width: 17.5px;
   height: 19px;
   background-repeat: no-repeat;
-  position: 0 0;
 }
 
 .header-phone {
@@ -567,7 +566,6 @@ input[type="search"]:focus {
 
   background-image: url("../img/icon-login.png");
   background-repeat: no-repeat;
-  position: 0 0;
 }
 
 .login-link:hover::before {
@@ -989,7 +987,6 @@ filter-input-checkbox ~ .label::after {
   width: 44px;
   height: 65px;
   background-repeat: no-repeat;
-  position: 0 0;
 }
 
 .applications-item:nth-child(1) {
@@ -1007,7 +1004,6 @@ filter-input-checkbox ~ .label::after {
   width: 75px;
   height: 61px;
   background-repeat: no-repeat;
-  position: 0 0;
 }
 
 .applications-item:nth-child(2) {
@@ -1025,7 +1021,6 @@ filter-input-checkbox ~ .label::after {
   width: 78px;
   height: 62px;
   background-repeat: no-repeat;
-  position: 0 0;
 }
 
 .applications-item:nth-child(3) {
@@ -1043,7 +1038,6 @@ filter-input-checkbox ~ .label::after {
   width: 59px;
   height: 72px;
   background-repeat: no-repeat;
-  position: 0 0;
 }
 
 .applications-item:nth-child(4) {
@@ -1061,7 +1055,6 @@ filter-input-checkbox ~ .label::after {
   width: 78px;
   height: 63px;
   background-repeat: no-repeat;
-  position: 0 0;
 }
 
 .applications-item:nth-child(5) {
@@ -1354,13 +1347,13 @@ filter-input-checkbox ~ .label::after {
   margin-left: 21px;
 }
 
-.sorting-arrows:hover .btn-arrow-up,
-.current .btn-arrow-up {
+.filter-sorting-item:hover .btn-arrow-up,
+.btn-arrow-up.current {
   border-color: transparent transparent var(--basic-red) transparent;
 }
 
 .sorting-arrows:hover .btn-arrow-down,
-.current .btn-arrow-down {
+.btn-arrow-down.current {
   border-color: var(--basic-red) transparent transparent transparent;
 }
 
@@ -2038,7 +2031,7 @@ filter-input-checkbox ~ .label::after {
 
 .catalog-information p {
   display: block;
-  margin: 0fr;
+  margin: 0;
   padding: 0;
   margin: 0;
 }
@@ -2379,7 +2372,7 @@ filter-input-checkbox ~ .label::after {
   padding-left: 12px;
   font: inherit;
   background-color: transparent;
-  border: 2px solid c5c5c5;
+  border: 2px solid var(--basic-greylight);
   border-radius: 5px;
   box-sizing: border-box;
 }
