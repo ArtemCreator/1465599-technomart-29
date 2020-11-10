@@ -1,4 +1,4 @@
-/* Variables*/
+/* Variables */
 
 :root {
   --basic-red: #ee3643;
@@ -855,8 +855,9 @@ fieldset:nth-child(2) {
 .label:hover:before,
 .label:hover:after,
 .label:hover {
-  color: #b5b5b5;
+  border-color: #b5b5b5;
 }
+
 .label::before,
 .label::after {
   content: "";
@@ -865,8 +866,7 @@ fieldset:nth-child(2) {
   top: -2px;
   width: 20px;
   height: 20px;
-  color: #c5c5c5;
-  border: #c5c5c5;
+  border: var(--basic-greylight);
   border-radius: 2px;
 }
 
@@ -875,13 +875,14 @@ fieldset:nth-child(2) {
   height: 19px;
   border: 2px solid;
   border-radius: 2.5px;
+  border-color: var(--basic-greylight);
 }
 
 filter-input-checkbox ~ .label::after {
   display: none;
   width: 18px;
   height: 8px;
-
+  border: var(--basic-greylight);
   position: absolute;
   left: -1px;
   bottom: 1px;
@@ -895,8 +896,8 @@ filter-input-checkbox ~ .label::after {
   left: -39px;
   width: 20px;
   height: 8px;
-  border-left: 4px solid;
-  border-bottom: 4px solid;
+  border-left: 4px solid var(--basic-greylight);
+  border-bottom: 4px solid var(--basic-greylight);
   transform: rotate(-45deg) translatey(-25%) translatex(50%);
   filter: drop-shadow(0 3px 0 white) drop-shadow(0 -3px 0 white);
 }
@@ -1289,8 +1290,6 @@ filter-input-checkbox ~ .label::after {
 .sorting-function {
   color: var(--black);
   opacity: .3;
-  border-bottom: 1px dashed var(--basic-red);
-
 }
 
 .sorting-price:hover,
@@ -1298,19 +1297,30 @@ filter-input-checkbox ~ .label::after {
 .sorting-function:hover {
   opacity: 1;
   border-bottom: 1px solid var(--basic-red);
-
 }
-.filter-sorting-list  .current {
+
+.filter-sorting-list .current {
   color: var(--basic-red);
   opacity: 1;
   border: none;
 }
 
-.filter-sorting-item button{
+.filter-sorting-item .sorting-arrows{
+  border: none;
+  margin-right: 0;
+  background-color: inherit;
+}
+
+.filter-sorting-item .sorting-price,
+.filter-sorting-item .sorting-type,
+.filter-sorting-item .sorting-function {
   text-transform: uppercase;
   padding: 0;
   border: 0;
   background-color: inherit;
+  cursor: pointer;
+  border-bottom: 1px dashed var(--basic-red);
+
 }
 
 .sorting-type {
@@ -1333,7 +1343,7 @@ filter-input-checkbox ~ .label::after {
   border-width: 0 5px 10px 5px;
   border-color: transparent transparent gray transparent;
   text-decoration: underline;
-  margin-left: 48px;
+  margin-left: 37px;
 }
 
 .btn-arrow-down {
@@ -1348,12 +1358,12 @@ filter-input-checkbox ~ .label::after {
 }
 
 .filter-sorting-item:hover .btn-arrow-up,
-.btn-arrow-up.current {
+.current .btn-arrow-up {
   border-color: transparent transparent var(--basic-red) transparent;
 }
 
 .sorting-arrows:hover .btn-arrow-down,
-.btn-arrow-down.current {
+.current .btn-arrow-down {
   border-color: var(--basic-red) transparent transparent transparent;
 }
 
@@ -1719,10 +1729,12 @@ filter-input-checkbox ~ .label::after {
   color: var(--black);
 }
 
-.pagination-item-current{
-  color: var(--basic-white);
-  background-color: var(--basic-red);
+.pagination-item-current {
   border-color: var(--basic-red);
+  background-color: var(--basic-red);
+}
+.pagination-item-current a {
+  color: var(--basic-white);
 }
 .pagination-list .pagination-item:not(:last-child) {
   margin-right: 9px;
@@ -2221,10 +2233,6 @@ filter-input-checkbox ~ .label::after {
 }
 
 .footer-copiright-loyout {
-  /* Grid
-  display: grid;
-  grid-template-columns: 1fr 1fr; */
-
   display: flex;
   justify-content: flex-end;
 }
@@ -2261,6 +2269,7 @@ filter-input-checkbox ~ .label::after {
   top: 0;
   right: 0;
   left: 0;
+  transform: translateY(50%);
   display: none;
   margin: auto;
   background-color: var(--basic-white);
@@ -2305,8 +2314,6 @@ filter-input-checkbox ~ .label::after {
 
 .modal-feedback {
   border-top: 7px solid var(--basic-red);
-  top: 120px;
-  bottom: auto;
   width: 620px;
 }
 
@@ -2335,7 +2342,7 @@ filter-input-checkbox ~ .label::after {
 }
 
 .feedback-form-item input {
-  width: auto;
+  width: 100%;
   padding-top: 7px;
   padding-right: 8px;
   padding-bottom: 7px;

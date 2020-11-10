@@ -1,58 +1,39 @@
-const link = document.querySelector(".map");
-const popup = document.querySelector(".modal-map");
-const close = document.querySelector(".modal-close");
+// Модальные окна: карта и фидбек
 
-link.addEventListener("click", function  (evt) {
-  evt.preventDefault();
-  popup.classList.add("modal-show");
-});
+// Декларирование переменных
+const
+  linkMap = document.querySelector(".map"),
+  linkFeed = document.querySelector(".btn-feed");
 
-close.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal-show");
-});
+const
+  popups = document.querySelectorAll(".modal"),
+  close = document.querySelectorAll(".modal-close");
 
-const linkfeed = document.querySelector(".btn-feed");
-const popupfeed = document.querySelector(".modal-feedback");
-const form = popupfeed.querySelector(".feedback-form");
-const fullNameUser = popupfeed.querySelector("[name=name-user]");
-const email = popupfeed.querySelector("[name=email]");
-// const storage = localStorage.getItem(fullNameUser);
+// Функции для гибкого использования
+const modalOpen = (link, modals, modal) => {
+  link.addEventListener("click", (evt) => {
+    evt.preventDefault();
 
-let isStorageSupport = true;
-let storage = "";
+    [].forEach.call(modals, (el) => {
+      el.classList.remove("modal-show");
+    })
 
-linkfeed.addEventListener("click", function  (evt) {
-  evt.preventDefault();
-  popupfeed.classList.add("modal-show");
-  fullNameUser.focus();
-  if (storage) {
-    fullNameUser.value = storage;
-  }
-});
-
-form.addEventListener("submit", function (evt){
-  if (!fullNameUser.value || !email.value){
-  evt.preventDefault();
-  console.log("Select name and email");
-  } else {
-    if (isStorageSupport)
-    localStorage.setItem("fullNameUser", fullNameUser.value);
-  }
-});
-
-try{
-  storage = localStorage.getItem("fullNameUser");
-} catch (err) {
-  isStorageSupport = false;
+    modal.classList.add("modal-show");
+  });
 }
 
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popupfeed.classList.remove("modal-show");
-});
+const modalHide = (closeBtn, modals) => {
+  [].forEach.call(closeBtn, (el) => {
+    el.addEventListener("click", (evt) => {
+      [].forEach.call(modals, (el) => {
+        el.classList.remove("modal-show");
+      })
+    })
+  })
+}
 
-close.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal-show");
-});
+// Вызов функций для использования
+modalOpen(linkMap, popups, popups[0])
+modalOpen(linkFeed, popups, popups[1])
+
+modalHide(close, popups)
